@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  font-family: system-ui;
+  background: #0e0e10;
+  color: white;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #121212;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #7cff00;
+  margin-right: 20px;
+}
+
+.topbar input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  background: #1f1f1f;
+}
+
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 15px;
+  background: #121212;
+}
+
+.sidebar div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar div:hover {
+  background: #1f1f1f;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+#video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  cursor: pointer;
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.player {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player video {
+  width: 80%;
+  max-height: 80%;
+}
+
+.player button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
